@@ -1,6 +1,7 @@
 package com.hrms.api.controllers;
 
 import com.hrms.business.abstracts.JobPositionService;
+import com.hrms.core.utilities.results.DataResult;
 import com.hrms.entities.concretes.JobPosition;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,7 +19,7 @@ public class JobPositionsController {
 
 
   @GetMapping("/job-positions")
-  public List<JobPosition> getAll(){
+  public DataResult<List<JobPosition>> getAll(){
     return jobPositionService.getAll();
   }
 

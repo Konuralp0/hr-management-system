@@ -2,7 +2,9 @@ package com.hrms.business.concretes;
 
 import com.hrms.business.abstracts.JobPositionService;
 import com.hrms.core.utilities.results.DataResult;
+import com.hrms.core.utilities.results.Result;
 import com.hrms.core.utilities.results.SuccessDataResult;
+import com.hrms.core.utilities.results.SuccessResult;
 import com.hrms.data_access.JobPositionDAO;
 import com.hrms.entities.concretes.JobPosition;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,5 +26,11 @@ public class JobPositionManager implements JobPositionService {
   @Override
   public DataResult<List<JobPosition>> getAll() {
     return new SuccessDataResult<List<JobPosition>>(jobPositionDAO.findAll(),"Data retrieved");
+  }
+
+  @Override
+  public Result add(JobPosition jobPosition) {
+    jobPositionDAO.save(jobPosition);
+    return new SuccessResult("Job Position added");
   }
 }

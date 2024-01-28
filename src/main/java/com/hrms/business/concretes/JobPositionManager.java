@@ -12,12 +12,20 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
+/**
+ * The type Job position manager.
+ */
 @Service
 public class JobPositionManager implements JobPositionService {
 
 
   private JobPositionDAO jobPositionDAO;
 
+  /**
+   * Instantiates a new Job position manager.
+   *
+   * @param jobPositionDAO the job position dao
+   */
   @Autowired
   public JobPositionManager(JobPositionDAO jobPositionDAO) {
     this.jobPositionDAO = jobPositionDAO;
@@ -25,7 +33,7 @@ public class JobPositionManager implements JobPositionService {
 
   @Override
   public DataResult<List<JobPosition>> getAll() {
-    return new SuccessDataResult<List<JobPosition>>(jobPositionDAO.findAll(),"Data retrieved");
+    return new SuccessDataResult<List<JobPosition>>(jobPositionDAO.findAll(),"Data retrieved successfully");
   }
 
   @Override

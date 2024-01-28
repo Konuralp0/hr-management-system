@@ -2,27 +2,27 @@ package com.hrms.business.abstracts;
 
 import com.hrms.core.utilities.results.DataResult;
 import com.hrms.core.utilities.results.Result;
-import com.hrms.entities.concretes.JobPosition;
-
+import com.hrms.entities.concretes.Employer;
 
 import java.util.List;
 
 /**
- * The interface Job position service.
+ * The interface Employer service.
  */
-public interface JobPositionService {
+public interface EmployerService {
   /**
    * Gets all.
    *
    * @return the all
    */
-  DataResult<List<JobPosition>> getAll();
+  DataResult<List<Employer>> getAll();
 
   /**
    * Add result.
    *
-   * @param jobPosition the job position
+   * @param employer the employer
    * @return the result
    */
-  Result add(JobPosition jobPosition) ;
+  Result add(Employer employer);
+
 }

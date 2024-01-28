@@ -9,21 +9,35 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * The type Job positions controller.
+ */
 @RestController
-@RequestMapping("/api")
+@RequestMapping("/api/job-positions")
 public class JobPositionsController {
 
   @Autowired
   private JobPositionService jobPositionService;
 
 
-  @GetMapping("/job-positions")
+  /**
+   * Get all data result.
+   *
+   * @return the data result
+   */
+  @GetMapping
   public DataResult<List<JobPosition>> getAll(){
     return jobPositionService.getAll();
   }
 
 
-  @PostMapping("/job-positions")
+  /**
+   * Add result.
+   *
+   * @param jobPosition the job position
+   * @return the result
+   */
+  @PostMapping
   public Result add(@RequestBody JobPosition jobPosition){
     return jobPositionService.add(jobPosition);
   }

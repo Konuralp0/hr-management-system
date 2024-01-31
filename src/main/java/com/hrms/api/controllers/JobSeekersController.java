@@ -43,6 +43,15 @@ public class JobSeekersController {
   public DataResult<JobSeeker> getJobSeekerById(@PathVariable Long id) {
     return jobSeekerService.getById(id);
   }
+  @GetMapping("/findByEmail")
+  public DataResult<JobSeeker> findByEmail(@RequestParam String email){
+    return jobSeekerService.findByEmail(email);
+  }
+  @GetMapping("/findByName")
+  public DataResult<List<JobSeeker>> findByFirstName(@RequestParam String firstName){
+    return jobSeekerService.findByFirstName(firstName);
+
+  }
 
 
 

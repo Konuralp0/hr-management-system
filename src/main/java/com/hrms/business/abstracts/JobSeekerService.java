@@ -36,5 +36,21 @@ public interface JobSeekerService {
    */
   DataResult<JobSeeker> getById(Long id);
 
+  /**
+   * Find by email data result.
+   *
+   * @param email the email
+   * @return the data result
+   */
+  DataResult<JobSeeker> findByEmail(String email);
+
+  /**
+   * Find by first name data result.
+   *
+   * @param firstName the first name
+   * @return the data result
+   */
+  DataResult<List<JobSeeker>> findByFirstName(String firstName);
+
 
 }

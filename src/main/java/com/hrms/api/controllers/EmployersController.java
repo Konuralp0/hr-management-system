@@ -25,4 +25,19 @@ public class EmployersController {
   public Result registerEmployer(@RequestBody Employer employer) {
     return employerService.add(employer);
   }
+
+
+  public DataResult<Employer> getEmployerById(long id){
+    return employerService.getEmployerById(id);
+  }
+
+
+ public DataResult<Employer> getEmployerByCompanyName(String companyName){
+    return employerService.getEmployerByCompanyName(companyName);
+ }
+
+
+ public DataResult<Employer> getEmployerByEmail(String email){
+    return employerService.getEmployerByEmail(email);
+ }
 }

@@ -44,7 +44,20 @@ public class EmployerManager implements EmployerService {
     return new SuccessDataResult<>("Employer added");
   }
 
+  @Override
+  public DataResult<Employer> getEmployerById(long id) {
+    return new SuccessDataResult<Employer>(employerDAO.getEmployerById(id));
+  }
 
+  @Override
+  public DataResult<Employer> getEmployerByCompanyName(String companyName) {
+    return new SuccessDataResult<Employer>(employerDAO.getEmployerByCompanyName(companyName));
+  }
+
+  @Override
+  public DataResult<Employer> getEmployerByEmail(String email) {
+    return new SuccessDataResult<Employer>(employerDAO.getEmployerByEmail(email));
+  }
 
   private boolean isInputValid(Employer employer) {
     return employer != null &&

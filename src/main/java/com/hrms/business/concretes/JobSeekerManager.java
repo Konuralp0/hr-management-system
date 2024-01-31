@@ -47,7 +47,25 @@ public class JobSeekerManager implements JobSeekerService {
     }
   }
 
+  @Override
+  public DataResult<JobSeeker> findByEmail(String email) {
+    JobSeeker jobSeeker = jobSeekerDAO.findByEmail(email);
+    if (jobSeeker != null) {
+      return new SuccessDataResult<>(jobSeeker, "Job seeker found");
+    } else {
+      return new ErrorDataResult<>(null,"Job seeker not found");
+    }
+  }
 
+  @Override
+  public DataResult<List<JobSeeker>> findByFirstName(String firstName) {
+    List<JobSeeker> jobSeekers = jobSeekerDAO.findByFirstName(firstName);
+    if (!jobSeekers.isEmpty()) {
+      return new SuccessDataResult<>(jobSeekers, "Job seeker found");
+    } else {
+      return new ErrorDataResult<>(null,"Job seeker not found");
+    }
+  }
 
   private boolean isInputValid(JobSeeker jobSeeker) {
     return jobSeeker != null &&

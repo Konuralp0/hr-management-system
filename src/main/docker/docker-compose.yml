@@ -23,7 +23,6 @@ services:
       - "5432:5432"
     volumes:
       - pg_data:/var/lib/postgresql/data
-      - hrms/src/main/docker/backup:/backup/backup
     environment:
       - POSTGRES_DB=hrms
       - POSTGRES_USER=postgres

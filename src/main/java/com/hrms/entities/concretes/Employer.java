@@ -25,6 +25,7 @@ public class Employer {
 
   @Column(name ="website" )
   @NotBlank(message = "Website is required")
+
   private String website;
 
   @Column(name ="email" )

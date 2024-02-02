@@ -16,7 +16,7 @@ import lombok.NoArgsConstructor;
 public class JobPosition {
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
-  @Column(name = "position_id")
+  @Column(name = "position_id", columnDefinition = "BIGINT")
   private Long positionId;
 
   @Column(name = "position_name", unique = true, nullable = false)

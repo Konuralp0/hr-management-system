@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ff1007eb-c6c8-4e3c-9a1d-e972be64f1a3" name="Changes" comment="updated docker">
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/EmployersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/EmployersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/JobPositionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/JobPositionsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/JobSeekersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/JobSeekersController.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="useMavenConfig" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2bW34aFhSDOHyzhmrwqPA4LeCTK" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Konuralp/IdeaProjects/hrms/src/main/java/com/hrms/core/utilities/results&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;afafdb39c68b8de0f0d0a441e3a69a19&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Konuralp\IdeaProjects\hrms\src\main\java\com\hrms\core\utilities\results" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Konuralp\IdeaProjects\hrms\Backend" />
+      <recent name="C:\Users\Konuralp\IdeaProjects\hrms\src\main\docker" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.hrms" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean spring-boot:build-image" />
+      <command value="mvn clean" />
+      <command value="mvn compile" />
+      <command value="mvn clean install" />
+      <command value="mvn clean package -DskipTests" />
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.HrmsApplication">
+    <configuration name="HrmsApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="hrms" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hrms.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.hrms" />
+      <option name="MAIN_CLASS_NAME" value="com.hrms.HrmsApplicationTests" />
+      <option name="METHOD_NAME" value="contextLoads" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HrmsApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="hrms" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hrms.HrmsApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="docker-compose.yml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="envFilePath" value="" />
+          <option name="sourceFilePath" value="docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="src/main/docker/docker-compose.yml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <configuration name="docker/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
+      <deployment type="dockerfile">
+        <settings>
+          <option name="sourceFilePath" value="src/main/docker/Dockerfile" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.HrmsApplicationTests.contextLoads" />
+        <item itemvalue="Docker.docker: Compose Deployment" />
+        <item itemvalue="Docker.docker/Dockerfile" />
+        <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ff1007eb-c6c8-4e3c-9a1d-e972be64f1a3" name="Changes" comment="" />
+      <created>1706316817909</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1706316817909</updated>
+      <workItem from="1706316819631" duration="1587000" />
+      <workItem from="1706318415010" duration="39000" />
+      <workItem from="1706318458593" duration="1300000" />
+      <workItem from="1706397577778" duration="1445000" />
+      <workItem from="1706454316167" duration="262000" />
+      <workItem from="1706461953616" duration="633000" />
+      <workItem from="1706481572153" duration="3616000" />
+      <workItem from="1706524998738" duration="34000" />
+      <workItem from="1706536665495" duration="13000" />
+      <workItem from="1706538957556" duration="11000" />
+      <workItem from="1706546062206" duration="3539000" />
+      <workItem from="1706549635209" duration="943000" />
+      <workItem from="1706619865356" duration="5154000" />
+      <workItem from="1706626280942" duration="103000" />
+      <workItem from="1706634690813" duration="1189000" />
+      <workItem from="1706644381895" duration="1283000" />
+      <workItem from="1706698490178" duration="681000" />
+      <workItem from="1706786860298" duration="2623000" />
+      <workItem from="1706819150742" duration="12000" />
+      <workItem from="1706869632411" duration="3981000" />
+      <workItem from="1706992277296" duration="1347000" />
+      <workItem from="1706999274636" duration="2138000" />
+      <workItem from="1707041931282" duration="606000" />
+      <workItem from="1707078574036" duration="4000" />
+      <workItem from="1707080459945" duration="2941000" />
+      <workItem from="1707083697339" duration="80000" />
+    </task>
+    <task id="LOCAL-00001" summary="updated docker">
+      <created>1706624989978</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1706624989978</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="updated docker" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated docker" />
+  </component>
+</project>

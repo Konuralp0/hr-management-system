@@ -5,9 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff1007eb-c6c8-4e3c-9a1d-e972be64f1a3" name="Changes" comment="updated docker">
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/EmployersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/EmployersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/JobPositionsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/JobPositionsController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/JobSeekersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Backend/src/main/java/com/hrms/api/controllers/JobSeekersController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Frontend/fe/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/fe/.gitignore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,25 +39,25 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
-    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
-    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
-    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;temurin-17&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/Konuralp/IdeaProjects/hrms/src/main/java/com/hrms/core/utilities/results&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.annotationProcessors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;afafdb39c68b8de0f0d0a441e3a69a19&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "temurin-17",
+    "last_opened_file_path": "C:/Users/Konuralp/IdeaProjects/hrms/src/main/java/com/hrms/core/utilities/results",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.annotationProcessors",
+    "spring.configuration.checksum": "105754e634c32c03aa7fdce0573c3343"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Konuralp\IdeaProjects\hrms\src\main\java\com\hrms\core\utilities\results" />
@@ -174,6 +172,7 @@
       <workItem from="1707078574036" duration="4000" />
       <workItem from="1707080459945" duration="2941000" />
       <workItem from="1707083697339" duration="80000" />
+      <workItem from="1707083793910" duration="301000" />
     </task>
     <task id="LOCAL-00001" summary="updated docker">
       <created>1706624989978</created>

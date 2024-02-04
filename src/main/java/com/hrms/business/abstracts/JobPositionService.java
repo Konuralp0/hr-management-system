@@ -25,4 +25,13 @@ public interface JobPositionService {
    * @return the result
    */
   Result add(JobPosition jobPosition) ;
+
+  /**
+   * Gets all.
+   *
+   * @param pageNo   the page no
+   * @param pageSize the page size
+   * @return the all
+   */
+  DataResult<List<JobPosition>> getAll(int pageNo, int pageSize);
 }

@@ -35,7 +35,7 @@ public class JobSeeker {
 
   @NotBlank(message = "TC number is required")
   @Pattern(regexp = "\\d{11}", message = "TC number must be 11 digits")
-  @Column(name = "tc_no")
+  @Column(name = "tc_no", unique = true)
   private String tcNo;
 
   @Column(name = "birth_year")
@@ -43,7 +43,7 @@ public class JobSeeker {
 
   @NotBlank(message = "Email is required")
   @Email(message = "Invalid email format")
-  @Column(name = "email" )
+  @Column(name = "email", unique = true)
   private String email;
 
   @NotBlank(message = "Password is required")

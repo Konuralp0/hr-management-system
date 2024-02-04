@@ -49,6 +49,11 @@ public class JobPositionsController {
     return jobPositionService.add(jobPosition);
   }
 
+  @GetMapping("/getAllByPage")
+  DataResult<List<JobPosition>> getAll(int pageNo, int pageSize){
+    return jobPositionService.getAll(pageNo,pageSize);
+  }
+
   @ExceptionHandler(MethodArgumentNotValidException.class)
   @ResponseStatus(HttpStatus.BAD_REQUEST)
   public ErrorDataResult<Object> handleValidationException(MethodArgumentNotValidException exception){

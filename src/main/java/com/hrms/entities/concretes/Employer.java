@@ -28,7 +28,7 @@ public class Employer {
 
   private String website;
 
-  @Column(name ="email" )
+  @Column(name ="email", unique = true)
   @NotBlank(message = "Email is required")
   @Email(message = "Invalid email format")
   private String email;

@@ -8,6 +8,8 @@ import com.hrms.core.utilities.results.SuccessResult;
 import com.hrms.data_access.JobPositionDAO;
 import com.hrms.entities.concretes.JobPosition;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -40,5 +42,11 @@ public class JobPositionManager implements JobPositionService {
   public Result add(JobPosition jobPosition) {
     jobPositionDAO.save(jobPosition);
     return new SuccessResult("Job Position added");
+  }
+
+  @Override
+  public DataResult<List<JobPosition>> getAll(int pageNo, int pageSize) {
+    Pageable pageable = PageRequest.of(pageNo-1, pageSize);
+    return new SuccessDataResult<List<JobPosition>>(jobPositionDAO.findAll(pageable).getContent(),"Data listed sucessfully");
   }
 }

@@ -21,6 +21,7 @@ import java.util.Map;
  */
 @RestController
 @RequestMapping("/api/job-seekers")
+@CrossOrigin
 public class JobSeekersController {
 
   @Autowired

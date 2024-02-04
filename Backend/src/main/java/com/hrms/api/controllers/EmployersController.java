@@ -1,13 +1,14 @@
 package com.hrms.api.controllers;
 
-import com.hrms.business.abstracts.JobPositionService;
+import com.hrms.business.abstracts.EmployerService;
 import com.hrms.core.utilities.results.DataResult;
 import com.hrms.core.utilities.results.ErrorDataResult;
 import com.hrms.core.utilities.results.Result;
-import com.hrms.entities.concretes.JobPosition;
+import com.hrms.entities.concretes.Employer;
 import jakarta.validation.Valid;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.*;
@@ -16,43 +17,38 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-/**
- * The type Job positions controller.
- */
 @RestController
-@RequestMapping("/api/job-positions")
-public class JobPositionsController {
+@RequestMapping("/api/employers")
+@CrossOrigin
+public class EmployersController {
 
   @Autowired
-  private JobPositionService jobPositionService;
+  private EmployerService employerService;
 
-
-  /**
-   * Get all data result.
-   *
-   * @return the data result
-   */
   @GetMapping
-  public DataResult<List<JobPosition>> getAll(){
-    return jobPositionService.getAll();
+  public DataResult<List<Employer>> getAllEmployers() {
+    return employerService.getAll();
   }
 
-
-  /**
-   * Add result.
-   *
-   * @param jobPosition the job position
-   * @return the result
-   */
   @PostMapping
-  public Result add(@Valid @RequestBody JobPosition jobPosition){
-    return jobPositionService.add(jobPosition);
+  public ResponseEntity<?> registerEmployer(@Valid @RequestBody Employer employer) {
+    return ResponseEntity.ok(employerService.add(employer));
   }
 
-  @GetMapping("/getAllByPage")
-  DataResult<List<JobPosition>> getAll(int pageNo, int pageSize){
-    return jobPositionService.getAll(pageNo,pageSize);
+
+  public DataResult<Employer> getEmployerById(long id){
+    return employerService.getEmployerById(id);
   }
+
+
+ public DataResult<Employer> getEmployerByCompanyName(String companyName){
+    return employerService.getEmployerByCompanyName(companyName);
+ }
+
+
+ public DataResult<Employer> getEmployerByEmail(String email){
+    return employerService.getEmployerByEmail(email);
+ }
 
   @ExceptionHandler(MethodArgumentNotValidException.class)
   @ResponseStatus(HttpStatus.BAD_REQUEST)
@@ -64,6 +60,4 @@ public class JobPositionsController {
     ErrorDataResult<Object> errorDataResult = new ErrorDataResult<>(validationsError,"Dogrulama hatalari");
     return errorDataResult;
   }
-
-
 }

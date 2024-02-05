@@ -5,67 +5,21 @@ import { MenuMenu, MenuItem, MenuHeader, Menu } from 'semantic-ui-react'
 export default function Navi() {
   return (
     <div>
-      <Menu vertical inverted fixed='top'>
+      <Menu inverted fixed='top' widths={11} >
         <MenuItem>
-          <MenuHeader>Products</MenuHeader>
-
-          <MenuMenu>
-            <MenuItem
-              name='enterprise'
-            />
-            <MenuItem
-              name='consumer'
-            />
-          </MenuMenu>
+          <MenuHeader>Job Seekers</MenuHeader>
         </MenuItem>
 
         <MenuItem>
-          <MenuHeader>CMS Solutions</MenuHeader>
-
-          <MenuMenu>
-            <MenuItem
-              name='rails'
-            />
-            <MenuItem
-              name='python'
-            />
-            <MenuItem
-              name='php'
-            />
-          </MenuMenu>
+          <MenuHeader>Employers</MenuHeader>
         </MenuItem>
 
         <MenuItem>
-          <MenuHeader>Hosting</MenuHeader>
-
-          <MenuMenu>
-            <MenuItem
-              name='shared'
-            />
-            <MenuItem
-              name='dedicated'
-            />
-          </MenuMenu>
+          <MenuHeader>Job Positions</MenuHeader>
         </MenuItem>
 
         <MenuItem>
           <MenuHeader>Support</MenuHeader>
-
-          <MenuMenu>
-            <MenuItem
-              name='email'
-              
-            >
-              E-mail Support
-            </MenuItem>
-
-            <MenuItem
-              name='faq'
-             
-            >
-              FAQs
-            </MenuItem>
-          </MenuMenu>
         </MenuItem>
       </Menu>
     </div>

@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="ff1007eb-c6c8-4e3c-9a1d-e972be64f1a3" name="Changes" comment="updated docker">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/fe/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/fe/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Frontend/fe/src/layouts/Navi.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/Frontend/fe/src/layouts/Navi.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -177,7 +175,9 @@
       <workItem from="1707083697339" duration="80000" />
       <workItem from="1707083793910" duration="690000" />
       <workItem from="1707136727129" duration="137000" />
-      <workItem from="1707169295254" duration="944000" />
+      <workItem from="1707169295254" duration="1324000" />
+      <workItem from="1707232901860" duration="4000" />
+      <workItem from="1707237532073" duration="11000" />
     </task>
     <task id="LOCAL-00001" summary="updated docker">
       <created>1706624989978</created>

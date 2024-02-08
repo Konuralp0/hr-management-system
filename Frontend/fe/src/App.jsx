@@ -10,7 +10,6 @@ function App() {
     <div className="App">
       <Navi/>
       <Container className='main'>
-        <JobSeekerList />
 
       </Container>
 

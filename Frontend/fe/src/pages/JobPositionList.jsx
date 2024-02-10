@@ -29,7 +29,7 @@ export default function JobPositionList() {
   
     return (
     <div>
-       <Table celled>
+       <Table celled className='table' size='large'>
                 <TableHeader>
                     <TableRow>
                         <TableHeaderCell>Positions</TableHeaderCell>

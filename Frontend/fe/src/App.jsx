@@ -8,9 +8,8 @@ import { Container } from 'semantic-ui-react';
 function App() {
   return (
     <div className="App">
-      <Navi/>
+      <Navi className="navbar"/>
       <Container className='main'>
-
       </Container>
 
     </div>

@@ -29,7 +29,7 @@ export default function JobSeekerList() {
   
     return (
     <div>
-       <Table celled>
+       <Table celled className='table' size='large' padded>
                 <TableHeader>
                     <TableRow>
                         <TableHeaderCell>First Name</TableHeaderCell>

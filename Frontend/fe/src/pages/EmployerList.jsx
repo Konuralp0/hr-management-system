@@ -1,5 +1,5 @@
 import React,  {useState,useEffect} from 'react'
-import JobSeekerService from '../services/jobSeekerService'
+import EmployerService from '../services/employerService'
 import {
     TableRow,
     TableHeaderCell,
@@ -13,14 +13,14 @@ import {
     Table,
   } from 'semantic-ui-react'
 
-export default function JobSeekerList() {
+export default function EmployerList() {
 
-    const [jobSeekers, setjobSeekers] = useState([])
+    const [employer, setemployer] = useState([])
 
     useEffect(()=>{
 
-        let jobSeekerService = new JobSeekerService();
-        jobSeekerService.getJobSeekers().then(result => setjobSeekers(result.data.data))
+        let employerService = new EmployerService();
+        employerService.getEmployers().then(result => setemployer(result.data.data))
 
 
     },[])
@@ -32,22 +32,20 @@ export default function JobSeekerList() {
        <Table celled className='table' size='large'>
                 <TableHeader>
                     <TableRow>
-                        <TableHeaderCell>First Name</TableHeaderCell>
-                        <TableHeaderCell>Last Name</TableHeaderCell>
-                        <TableHeaderCell>Id Number</TableHeaderCell>
-                        <TableHeaderCell>Birth Year</TableHeaderCell>
+                        <TableHeaderCell>Company Name</TableHeaderCell>
+                        <TableHeaderCell>Website</TableHeaderCell>
                         <TableHeaderCell>Email</TableHeaderCell>
                     </TableRow>
                 </TableHeader>
 
                 <TableBody>
-                    {jobSeekers.map(jobSeeker=>(
-                        <TableRow key={jobSeeker.id}> 
-                        <TableCell>{jobSeeker.firstName}</TableCell>
-                        <TableCell>{jobSeeker.lastName}</TableCell>
-                        <TableCell>{jobSeeker.tcNo}</TableCell>
-                        <TableCell>{jobSeeker.birthYear}</TableCell>
-                        <TableCell>{jobSeeker.email}</TableCell>
+                    {employer.map(employer=>(
+                        <TableRow key={employer.id}> 
+                        <TableCell>{employer.companyName}</TableCell>
+                        <TableCell>{employer.website}</TableCell>
+                        <TableCell>{employer.email}</TableCell>
+                        
+
                     </TableRow>
                     ))
                     }

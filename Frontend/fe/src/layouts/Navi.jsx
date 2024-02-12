@@ -5,6 +5,7 @@ import {Route,Routes} from "react-router-dom"
 import JobPositionList from '../pages/JobPositionList'
 import JobSeekerList from '../pages/JobSeekerList'
 import EmployerList from '../pages/EmployerList'
+import Welcoming from '../pages/Welcoming'
 
 
 export default function Navi() {
@@ -14,6 +15,7 @@ export default function Navi() {
               <Route exact path="/job-positions" element={<JobPositionList />} />
               <Route exact path="/job-seekers" element={<JobSeekerList/>} />
               <Route path="/employers"  element={<EmployerList/>}/> 
+              <Route path = "/" element = {<Welcoming/>}/>
       </Routes>
       <Menu inverted fixed='top' widths={11} >
       
